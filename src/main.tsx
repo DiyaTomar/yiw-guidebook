@@ -3,33 +3,68 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App';
 import './index.css';
-import Academics from './pages/academics';
-import Activities from './pages/activities';
-import CollegeLife from './pages/collegelife';
-import Resources from './pages/resources';
+// importing components
 import ErrorPage from './pages/error';
+import Requirements from './pages/academics/Requirements';
+import CreditAnalyzer from './pages/academics/CreditAnalyzer';
+import Organizations from './pages/activities/Organizations';
+import Events from './pages/activities/Events';
+import Opportunities from './pages/activities/Opportunities';
+import PlacesToVisit from './pages/collegelife/PlacesToVisit';
+import StudentExperiences from './pages/collegelife/StudentExperiences';
+import FAQPage from './pages/resources/FAQPage';
+import OtherResources from './pages/resources/OtherResources';
 
 const router = createBrowserRouter([
+    // Home page
     {
         path: '/',
         element: <App />,
         errorElement: <ErrorPage />,
     },
+
+    // Academics pages
     {
-        path: 'academics',
-        element: <Academics />,
+        path: 'academics/requirements',
+        element: <Requirements />,
     },
     {
-        path: 'activities',
-        element: <Activities />,
+        path: 'academics/credit-analyzer',
+        element: <CreditAnalyzer />,
+    },
+
+    // Activities pages
+    {
+        path: 'activities/organizations',
+        element: <Organizations />,
     },
     {
-        path: 'collegelife',
-        element: <CollegeLife />,
+        path: 'activities/events',
+        element: <Events />,
     },
     {
-        path: 'resources',
-        element: <Resources />,
+        path: 'activities/opportunities',
+        element: <Opportunities />,
+    },
+
+    // College Life pages
+    {
+        path: 'collegelife/places-to-visit',
+        element: <PlacesToVisit />,
+    },
+    {
+        path: 'collegelife/student-experiences',
+        element: <StudentExperiences />,
+    },
+
+    // Resources pages
+    {
+        path: 'resources/faq',
+        element: <FAQPage />,
+    },
+    {
+        path: 'resources/other-resources',
+        element: <OtherResources />,
     },
 ]);
 

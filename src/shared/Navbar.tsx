@@ -25,7 +25,7 @@ function Navbar(props: Props) {
                         Activities
                     </li>
                     <li className="hover:text-red-200 transition duration-300">
-                        Experiences
+                        College Life
                     </li>
                     <li className="hover:text-red-200 transition duration-300">
                         Resources
