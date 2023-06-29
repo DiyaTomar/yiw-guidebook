@@ -1,5 +1,7 @@
 // file containing code for the navbar
 import Logo from '../assets/logo.png';
+// importing dropdown div component
+import Dropdown from './Dropdown';
 
 type Props = {};
 
@@ -19,7 +21,8 @@ function Navbar(props: Props) {
                 <ul className="flex gap-16 mr-12">
                     {/* changing hover text color with a transition time of 300ms */}
                     <li className="hover:text-red-200 transition duration-300">
-                        About
+                        Academics
+                        <Dropdown subheadings={['hi', 'yo']} />
                     </li>
                     <li className="hover:text-red-200 transition duration-300">
                         Activities
