@@ -20,7 +20,7 @@ const slides = [
 
 function HomeCarousel() {
     return (
-        <Carousel className="rounded-2xl">
+        <Carousel autoplay loop className="rounded-2xl">
             {slides.map((slide) => (
                 <img
                     key={slide.id}
