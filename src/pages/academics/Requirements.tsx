@@ -1,9 +1,15 @@
-import React from 'react';
+import Navbar from '../../shared/Navbar';
+import Footer from '../../shared/Footer';
 
 type Props = {};
 
 function Requirements(props: Props) {
-    return <div>Requirements</div>;
+    return (
+        <div>
+            <Navbar />
+            <Footer />
+        </div>
+    );
 }
 
 export default Requirements;

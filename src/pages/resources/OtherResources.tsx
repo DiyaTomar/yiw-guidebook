@@ -1,7 +1,15 @@
+import Navbar from '../../shared/Navbar';
+import Footer from '../../shared/Footer';
+
 type Props = {};
 
 function OtherResources(props: Props) {
-    return <div>Other Resources</div>;
+    return (
+        <div>
+            <Navbar />
+            <Footer />
+        </div>
+    );
 }
 
 export default OtherResources;

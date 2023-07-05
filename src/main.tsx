@@ -49,11 +49,11 @@ const router = createBrowserRouter([
 
     // College Life pages
     {
-        path: 'collegelife/places-to-visit',
+        path: 'college-life/places-to-visit',
         element: <PlacesToVisit />,
     },
     {
-        path: 'collegelife/student-experiences',
+        path: 'college-life/student-experiences',
         element: <StudentExperiences />,
     },
 

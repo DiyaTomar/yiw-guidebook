@@ -1,9 +1,15 @@
-type Props = {}
+import Navbar from '../../shared/Navbar';
+import Footer from '../../shared/Footer';
 
-const Opportunities = (props: Props) => {
-  return (
-    <div>Opportunities</div>
-  )
+type Props = {};
+
+function Opportunities(props: Props) {
+    return (
+        <div>
+            <Navbar />
+            <Footer />
+        </div>
+    );
 }
 
-export default Opportunities
+export default Opportunities;
