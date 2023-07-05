@@ -1,16 +1,15 @@
-import { useState } from 'react';
-
 type Props = {
     subheadings: string[];
 };
 
 function Dropdown({ subheadings }: Props) {
-    const x = ['Page1', 'Page2', 'Page3'];
-
-    // managing the open/closed state of the dropdown
-    const [isOpen, setIsOpen] = useState<boolean>(true);
-
-    return <div className="bg-black text-green"> Dropdown</div>;
+    return (
+        <ul className="mt-2 bg-black p-4">
+            {subheadings.map((subheading) => (
+                <li className="py-1">{subheading}</li>
+            ))}
+        </ul>
+    );
 }
 
 export default Dropdown;
