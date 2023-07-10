@@ -2,7 +2,8 @@ import Navbar from '../../shared/Navbar';
 import Footer from '../../shared/Footer';
 import Header from '../../shared/Header';
 
-type Props = {};
+type Props = {
+};
 
 function CreditAnalyzer(props: Props) {
     return (
