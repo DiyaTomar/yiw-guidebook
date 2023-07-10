@@ -9,8 +9,8 @@ function App() {
             {/* contains title text and carousel */}
             <div className="md:grid grid-cols-2 bg-blue-100 pb-36">
                 <div className="pt-64 w-2/3 mx-auto">
-                    <div className="text-8xl">Year in Wise Guidebook</div>
-                    <div className="mt-12 text-3xl">
+                    <div className="text-7xl">Year in Wise Guidebook</div>
+                    <div className="mt-12 text-2xl">
                         This is the tagline for the Home screen
                     </div>
                 </div>
