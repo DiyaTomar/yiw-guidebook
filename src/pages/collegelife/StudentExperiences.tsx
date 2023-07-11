@@ -2,9 +2,7 @@ import Navbar from '../../shared/Navbar';
 import Footer from '../../shared/Footer';
 import Header from '../../shared/Header';
 
-type Props = {};
-
-function StudentExperiences(props: Props) {
+function StudentExperiences() {
     return (
         <div>
             <Navbar />

@@ -2,9 +2,7 @@ import Navbar from '../../shared/Navbar';
 import Footer from '../../shared/Footer';
 import Header from '../../shared/Header';
 
-type Props = {};
-
-function OtherResources(props: Props) {
+function OtherResources() {
     return (
         <div>
             <Navbar />

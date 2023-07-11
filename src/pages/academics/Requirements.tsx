@@ -2,12 +2,10 @@ import Navbar from '../../shared/Navbar';
 import Footer from '../../shared/Footer';
 import Header from '../../shared/Header';
 import ReqInfo from '../../shared/ReqInfo';
+import ContactInfoCard from '../../shared/ContactInfoCard';
+import info from '../../shared/staffInfo';
 
-type Props = {};
-
-const listStyling = 'list-disc list-inside text-xl py-2';
-
-function Requirements(props: Props) {
+function Requirements() {
     return (
         <div>
             <Navbar />
@@ -37,6 +35,20 @@ function Requirements(props: Props) {
                 sectionName="General Academic Tips"
                 sectionList={['List Item #1', 'List Item #2', 'List Item #3']}
             />
+
+            <div className="text-center text-3xl pt-10">Program Advisors</div>
+            <div className="md:flex gap-16 pb-16 py-8 justify-center">
+                {info.map((advisor) => (
+                    <ContactInfoCard
+                        key={advisor.id}
+                        name={advisor.name}
+                        position={advisor.position}
+                        number={advisor.number}
+                        email={advisor.email}
+                        office={advisor.office}
+                    />
+                ))}
+            </div>
 
             <Footer />
         </div>

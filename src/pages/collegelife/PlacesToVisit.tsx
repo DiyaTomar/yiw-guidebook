@@ -2,9 +2,7 @@ import Navbar from '../../shared/Navbar';
 import Footer from '../../shared/Footer';
 import Header from '../../shared/Header';
 
-type Props = {};
-
-function PlacesToVisit(props: Props) {
+function PlacesToVisit() {
     return (
         <div>
             <Navbar />
