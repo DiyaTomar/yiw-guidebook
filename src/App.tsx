@@ -9,7 +9,9 @@ function App() {
             {/* contains title text and carousel */}
             <div className="md:grid grid-cols-2 bg-blue-100 pb-36">
                 <div className="pt-64 w-2/3 mx-auto">
-                    <div className="text-7xl">Year in Wise Guidebook</div>
+                    <div className="text-7xl font-bold">
+                        Year in Wise Guidebook
+                    </div>
                     <div className="mt-12 text-2xl">
                         This is the tagline for the Home screen
                     </div>
@@ -21,10 +23,10 @@ function App() {
 
             {/* div containing about section */}
             <div className="bg-blue-200">
-                <div className="pt-24 text-4xl text-center">
+                <div className="pt-24 text-4xl text-center font-medium">
                     What is the Year in Wise program?
                 </div>
-                <div className="text-center py-24 w-1/2 mx-auto text-2xl leading-[2]">
+                <div className="text-center py-16 w-1/2 mx-auto text-xl leading-[2] font-light">
                     Welcome to the University of Virginia’s College at Wise, a
                     public, four-year residential liberal arts college located
                     in the lush mountains of Southwest Virginia. UVA Wise is

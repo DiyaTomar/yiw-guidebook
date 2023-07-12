@@ -1,7 +1,7 @@
 import Navbar from '../../shared/Navbar';
 import Footer from '../../shared/Footer';
 import Header from '../../shared/Header';
-import ReqInfo from '../../shared/ReqInfo';
+import ReqInfo from './sharedAcademics/ReqInfo';
 import ContactInfoCard from '../../shared/ContactInfoCard';
 import info from '../../shared/staffInfo';
 

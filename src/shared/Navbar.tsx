@@ -34,7 +34,7 @@ function Navbar() {
 
             {/* inserting uva wise logo inside div */}
             <Link
-                className="ml-12 flex gap-3 items-center basis-1/3 text-3xl"
+                className="ml-12 flex gap-3 items-center basis-1/3 text-3xl font-semibold"
                 to="/"
             >
                 <img className="w-10" src={Logo} alt="logo" />
@@ -42,7 +42,7 @@ function Navbar() {
             </Link>
 
             {/* Menu options (centered vertically, positioned to right) */}
-            <div className="flex items-center basis-2/3 justify-end">
+            <div className="flex items-center basis-2/3 justify-end font-semibold">
                 {/* List of headers (flex for row view, gap between list items with margin on right) */}
                 <ul className="flex gap-16 mr-12">
                     {/* changing hover text color with a transition time of 300ms */}

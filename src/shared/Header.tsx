@@ -3,7 +3,9 @@ type Props = {
 };
 
 function Header({ header }: Props) {
-    return <div className="pl-48 text-6xl py-48 bg-black">{header}</div>;
+    return (
+        <div className="pl-48 text-6xl py-48 bg-black font-bold">{header}</div>
+    );
 }
 
 export default Header;

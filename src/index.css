@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat:wght@700;800&family=Open+Sans&family=Roboto:wght@500&display=swap'); /* import fonts from google fonts website */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap'); /* import fonts from google fonts website */
 
 @tailwind base; /* Explanations below */
 @tailwind components;
@@ -22,7 +22,7 @@ body,
     /* Default Set up */
     height: 100%; /* set height and width to 100% of parent container */
     width: 100%;
-    font-family: 'Montserrat', 'sans-serif'; /*sets font to DM Sans but if not available then it will fall onto the default sans-serif */
+    font-family: 'Poppins', 'sans-serif'; /*sets font to DM Sans but if not available then it will fall onto the default sans-serif */
     @apply text-blue-700; /* @apply sets the default text color to gray-500, which is in our tailwind.config.js file */
 }
     

@@ -24,10 +24,9 @@ export default withMT({
         "mobile-home": "url('./assets/HomePageGraphic.png"
       }),
       fontFamily: {
-        dmsans: ['DM Sans', 'sans-serif'],
-        montserrat: ['Montserrat', 'sans-serif'],
-        roboto: ['Roboto', 'sans-serif'],
-        opensans: ['Open Sans', 'sans-serif']
+        poppins: ['Poppins', 'sans-serif'],
+        raleway: ['Raleway', 'sans-serif'],
+        figtree: ['Figtree', 'sans-serif']
       },
       content: {
         evolvetext: "url('./assets/EvolveText.png')",
