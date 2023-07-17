@@ -19,13 +19,14 @@ export default function LocationDropdown() {
             const url = `https://api.openweathermap.org/data/2.5/forecast?q=${selectedLocation}&appid=${apiKey}&units=imperial`;
             const response = await fetch(url);
             setWeatherData(await response.json());
+            console.log(weatherData);
         };
 
         fetchData();
     }, [selectedLocation]);
 
     return (
-        <div className="md:flex gap-">
+        <div className="md:flex gap-48">
             <div className="w-64 sm:mb-16">
                 <Select
                     label="Select Location"
@@ -47,16 +48,20 @@ export default function LocationDropdown() {
                     ))}
                 </Select>
             </div>
-            <div className="">
-                {weatherData && weatherData.list && (
-                    <ul className="flex">
-                        {weatherData.list.slice(0, 5).map((day: any) => (
-                            <li key={day.dt}>
-                                <WeatherCard day={day} />
-                            </li>
-                        ))}
-                    </ul>
-                )}
+            <div>
+                <ul className="flex">
+                    {weatherData &&
+                        weatherData.list.map((day: any, index: number) => {
+                            if (index % 8 === 0) {
+                                return (
+                                    <li key={day.dt}>
+                                        <WeatherCard day={day} />
+                                    </li>
+                                );
+                            }
+                            return null; // If you want to skip the elements that are not at every 5th index
+                        })}
+                </ul>
             </div>
         </div>
     );
