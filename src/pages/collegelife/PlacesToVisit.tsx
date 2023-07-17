@@ -1,7 +1,7 @@
 import Navbar from '../../shared/Navbar';
 import Footer from '../../shared/Footer';
 import Header from '../../shared/Header';
-import LocationDropdown from './sharedCL/locationDropdown';
+import LocationDropdown from './sharedCL/LocationDropdown';
 
 function PlacesToVisit() {
     return (

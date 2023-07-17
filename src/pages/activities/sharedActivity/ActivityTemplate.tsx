@@ -13,7 +13,7 @@ type Props = {
 function ActivityTemplate({ array }: Props) {
     return (
         <div className="md:flex flex-row-reverse">
-            <div className="md:sticky h-96 w-1/3 top-16 mx-auto mt-16">
+            <div className="md:sticky h-96 w-1/3 top-16 mx-auto mt-16 mb-16">
                 <ActivityCarousel />
             </div>
             <div className="w-2/5 mt-10 mx-auto ml-48">
