@@ -19,7 +19,6 @@ export default function LocationDropdown() {
             const url = `https://api.openweathermap.org/data/2.5/forecast?q=${selectedLocation}&appid=${apiKey}&units=imperial`;
             const response = await fetch(url);
             setWeatherData(await response.json());
-            console.log(weatherData);
         };
 
         fetchData();
