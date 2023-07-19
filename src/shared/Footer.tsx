@@ -24,6 +24,8 @@ function Footer() {
                         <li>
                             <a
                                 href="https://www.uvawise.edu/"
+                                target="_blank"
+                                rel="noreferrer"
                                 className="hover:underline pb-2"
                             >
                                 UVA Wise Website
@@ -32,6 +34,8 @@ function Footer() {
                         <li>
                             <a
                                 href="https://my.uvawise.edu/"
+                                target="_blank"
+                                rel="noreferrer"
                                 className="hover:underline pb-2"
                             >
                                 UVA Wise Portal
@@ -40,6 +44,8 @@ function Footer() {
                         <li>
                             <a
                                 href="https://moodle.uvawise.edu/"
+                                target="_blank"
+                                rel="noreferrer"
                                 className="hover:underline pb-2"
                             >
                                 Moodle
