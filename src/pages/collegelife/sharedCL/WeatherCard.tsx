@@ -13,7 +13,7 @@ function WeatherCard({ day }: Props) {
     });
 
     return (
-        <div className="h-40 w-40 border-2 text-center ">
+        <div className="h-[10rem] w-[8rem] border-2 text-center ">
             <div>{date}</div>
             <div className="flex justify-center h-16">
                 <img
