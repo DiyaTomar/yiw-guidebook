@@ -45,7 +45,7 @@ function CustomMap({ coordinates }: Props) {
     if (!isLoaded) return <div>Loading...</div>;
 
     return (
-        <div className="mt-32 mx-auto w-100 h-96">
+        <div className="mt-32 mx-auto w-100 h-[35rem]">
             <GoogleMap
                 zoom={15}
                 center={center}
