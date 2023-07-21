@@ -1,12 +1,9 @@
 import { GoogleMap, useLoadScript, MarkerF } from '@react-google-maps/api';
 import { useMemo, useState } from 'react';
-import markerLocations from './Locations';
+import { cities, markerLocations } from './Locations';
 
 type Props = {
-    coordinates: {
-        lat: number;
-        lon: number;
-    };
+    selectedLocation: string | undefined;
 };
 
 type Location = {
@@ -23,7 +20,7 @@ type Location = {
 
 const mapKey: string = import.meta.env.VITE_REACT_APP_MAP_API_KEY;
 
-function CustomMap({ coordinates }: Props) {
+function CustomMap({ selectedLocation }: Props) {
     const [descOpen, setDescOpen] = useState<boolean>(false);
     const [activeLocation, setActiveLocation] = useState<
         Location | undefined
@@ -32,9 +29,13 @@ function CustomMap({ coordinates }: Props) {
         googleMapsApiKey: mapKey,
     });
 
+    const coordinates = cities.find(
+        (location) => location.name === selectedLocation
+    )?.position;
+
     const center = useMemo(
-        () => ({ lat: coordinates.lat, lng: coordinates.lon }),
-        [coordinates.lat, coordinates.lon]
+        () => ({ lat: coordinates?.lat ?? 0, lng: coordinates?.lng ?? 0 }),
+        [coordinates?.lat, coordinates?.lng]
     );
 
     const handleMarkerClick = (location: Location) => {
@@ -45,7 +46,7 @@ function CustomMap({ coordinates }: Props) {
     if (!isLoaded) return <div>Loading...</div>;
 
     return (
-        <div className="mt-32 mx-auto w-100 h-[35rem]">
+        <div className="h-[35rem]">
             <GoogleMap
                 zoom={15}
                 center={center}

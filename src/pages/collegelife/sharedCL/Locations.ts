@@ -1,4 +1,4 @@
-const markerLocations = [
+export const markerLocations = [
     {
         id: 1,
         city: 'Wise',
@@ -33,4 +33,25 @@ const markerLocations = [
     },
 ];
 
-export default markerLocations;
+export const cities = [
+    {
+        name: 'Wise',
+        position: { lat: 36.9759, lng: -82.5757 },
+    },
+    {
+        name: 'Norton',
+        position: { lat: 36.9334, lng: -82.629 },
+    },
+    {
+        name: 'Big Stone Gap',
+        position: { lat: 36.8586, lng: -82.7832 },
+    },
+    {
+        name: 'Abingdon',
+        position: { lat: 36.7098, lng: -81.9773 },
+    },
+    {
+        name: 'Kingsport',
+        position: { lat: 36.5484, lng: -82.5618 },
+    },
+];
