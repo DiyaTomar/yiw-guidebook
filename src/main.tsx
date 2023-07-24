@@ -14,6 +14,7 @@ import PlacesToVisit from './pages/collegelife/PlacesToVisit';
 import StudentExperiences from './pages/collegelife/StudentExperiences';
 import FAQPage from './pages/resources/FAQPage';
 import OtherResources from './pages/resources/OtherResources';
+import ContactUs from './pages/contactus/ContactUs';
 
 const router = createBrowserRouter([
     // Home page
@@ -65,6 +66,11 @@ const router = createBrowserRouter([
     {
         path: 'resources/other-resources',
         element: <OtherResources />,
+    },
+    // Contact Us Page
+    {
+        path: 'contact-us',
+        element: <ContactUs />,
     },
 ]);
 
