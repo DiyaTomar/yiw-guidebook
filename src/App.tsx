@@ -1,6 +1,9 @@
+import { Link } from 'react-router-dom';
 import Navbar from './shared/Navbar'; // importing Navbar component
 import Footer from './shared/Footer'; // importing Footer component
 import HomeCarousel from './shared/HomeCarousel';
+import TestimonialHomeCard from './shared/TestimonialHomeCard';
+import testimonials from './shared/homeTestimonialInfo';
 
 function App() {
     return (
@@ -48,8 +51,28 @@ function App() {
                     say, This is Where it all Begins.
                 </div>
             </div>
-            <div className="py-24 text-4xl text-center">
+            <div className="pt-24 text-4xl text-center">
                 <div> Testimonials </div>
+                <div className="flex justify-evenly mt-4">
+                    {testimonials.map((testimonial) => (
+                        <TestimonialHomeCard
+                            key={testimonial.id}
+                            name={testimonial.name}
+                            major={testimonial.major}
+                            paragraph={testimonial.paragraph}
+                        />
+                    ))}
+                </div>
+                <div className="text-xl my-12 text-black">
+                    Check out other testimonials on our{' '}
+                    <Link
+                        to="/college-life/student-experiences"
+                        className="text-blue-500 hover:underline"
+                    >
+                        student experiences
+                    </Link>{' '}
+                    page!
+                </div>
             </div>
             <Footer />
         </div>

@@ -38,7 +38,7 @@ function Navbar() {
                 to="/"
             >
                 <img className="w-10" src={Logo} alt="logo" />
-                Year In Wise
+                Year in Wise
             </Link>
 
             {/* Menu options (centered vertically, positioned to right) */}
