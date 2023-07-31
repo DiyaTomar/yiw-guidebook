@@ -34,18 +34,37 @@ The YiW Guidebook is a website that provides a comprehensive overview of the Uni
 To navigate through our website, we have an accessible, mobile-responsive navigation bar with our headings. Scroll down to the footer to see a list of important websites and contact information pertaining to the Year in Wise program in general. The features of every page are highlighted below
 
 ### Pages:
-#### Home:
-* Material Tailwind Carousel with YiW heading, About Section of Program, Sample Testimonials
-#### Academics: 
-* Program Requirements, Advisor Contact Information, Embedded Transfer Credit Analyzer Website 
-#### Activities: 
-* List of Organizations, Events and Activities along with Fixed Material Tailwind Carousel
-#### College Life: 
-* Dropdown for Selecting a Location, Weather API Integration for Week's Temperature at Specified Location, Google Maps API Integration with Predetermined Location Markers and Descriptions, Testimonials with Filtering
-#### Resources: 
-* FAQ Section with Material Tailwind Accordion, Important Links, Contact Information Cards, Campus Map
-#### Contact Us: 
-* Contact Us Form with Validation Checks, FormSubmit to Gmail, SQL Database Integration with Form Submissions (in progress)
+
+**Home**:
+  - Material Tailwind Carousel with YiW heading
+  - About Section of Program
+  - Sample Testimonials
+
+**Academics**:
+  - Program Requirements
+  - Advisor Contact Information
+  - Embedded Transfer Credit Analyzer Website
+
+**Activities**:
+  - List of Organizations, Events, and Activities
+  - Fixed Material Tailwind Carousel
+
+**College Life**:
+  - Dropdown for Selecting a Location
+  - Weather API Integration for Week's Temperature at Specified Location
+  - Google Maps API Integration with Predetermined Location Markers and Descriptions
+  - Testimonials with Filtering
+
+**Resources**:
+  - FAQ Section with Material Tailwind Accordion
+  - Important Links
+  - Contact Information Cards
+  - Campus Map
+
+**Contact Us**:
+  - Contact Us Form with Validation Checks
+  - FormSubmit to Gmail
+  - SQL Database Integration with Form Submissions (in progress)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
