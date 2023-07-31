@@ -31,10 +31,15 @@
 
 The YiW Guidebook is a website that provides a comprehensive overview of the University of Virginia's Year in Wise program. The Year in Wise program offers students the opportunity to complete their first-year studies at the campus in Wise, VA before transferring to earn their degrees at the University's of Virginia's campus in Charlottesville, VA. Every year, this program is offered to 2,200+ students planning to attend the University of Virginia's College of Arts and Sciences.
 
-Main Features:
-* Feature 1
-* Feature 2
-* Feature 3
+To navigate through our website, we have an accessible, mobile-responsive navigation bar with our headings. Scroll down to the footer to see a list of important websites and contact information pertaining to the Year in Wise program in general. The features of every page are highlighted below
+
+Pages:
+* Home: Material Tailwind Carousel with YiW heading, About Section of Program, Sample Testimonials
+* Academics: Program Requirements, Advisor Contact Information, Embedded Transfer Credit Analyzer Website 
+* Activities: List of Organizations, Events and Activities along with Fixed Material Tailwind Carousel
+* College Life: Dropdown for Selecting a Location, Weather API Integration for Week's Temperature at Specified Location, Google Maps API Integration with Predetermined Location Markers and Descriptions, Testimonials with Filtering
+* Resources: FAQ Section with Material Tailwind Accordian, Important Links, Contact Information Cards, Campus Map
+* Contact Us: Contact Us Form with Validation Checks, FormSubmit to Gmail, SQL Database Integration with Form Submissions [In the Works]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
