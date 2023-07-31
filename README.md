@@ -32,9 +32,9 @@
 The YiW Guidebook is a website that provides a comprehensive overview of the University of Virginia's Year in Wise program. The Year in Wise program offers students the opportunity to complete their first-year studies at the campus in Wise, VA before transferring to earn their degrees at the University's of Virginia's campus in Charlottesville, VA. Every year, this program is offered to 2,200+ students planning to attend the University of Virginia's College of Arts and Sciences.
 
 Main Features:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+* Feature 1
+* Feature 2
+* Feature 3
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
