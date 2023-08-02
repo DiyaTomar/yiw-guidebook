@@ -5,8 +5,6 @@ type Props = {
     description: string;
 };
 
-const triangleWidth = 70;
-
 function CLTestimonialCard({ id, name, major, description }: Props) {
     const isOdd = id % 2 === 1;
 
@@ -23,13 +21,9 @@ function CLTestimonialCard({ id, name, major, description }: Props) {
             </div>
 
             {/* Bottom Left Triangle */}
-            <div
-                className={`absolute bottom-0 left-0 border-solid border-b-[${triangleWidth}px] border-r-[${triangleWidth}px] border-r-transparent border-red-800`}
-            />
+            <div className="absolute bottom-0 left-0 border-b-solid border-b-[70px] border-r-[70px] border-r-transparent border-red-800" />
             {/* Top Right Triangle */}
-            <div
-                className={`absolute top-0 right-0 border-solid border-t-[${triangleWidth}px] border-l-[${triangleWidth}px] border-l-transparent border-blue-900`}
-            />
+            <div className="absolute top-0 right-0 border-t-solid border-t-[70px] border-l-[70px] border-l-transparent border-blue-900" />
         </div>
     );
 }

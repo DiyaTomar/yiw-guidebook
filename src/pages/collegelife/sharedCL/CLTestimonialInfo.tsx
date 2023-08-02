@@ -1,8 +1,8 @@
-const clTestimonials = [
+export const clTestimonials = [
     {
         id: 1,
-        name: 'Hope Wiley',
-        major: "Undecided | YiW '22",
+        name: 'Haley Mitchell',
+        major: "Psychology | YiW '22",
         description: 'I love Wise',
     },
     {
@@ -31,4 +31,9 @@ const clTestimonials = [
     },
 ];
 
-export default clTestimonials;
+export const majors: string[] = [
+    'Psychology',
+    'Commerce',
+    'Foreign Affairs',
+    'Undecided',
+];
