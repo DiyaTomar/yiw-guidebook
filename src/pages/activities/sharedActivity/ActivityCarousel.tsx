@@ -21,13 +21,7 @@ const slides = [
 
 function ActivityCarousel() {
     return (
-        <Carousel
-            prevArrow={() => <div />}
-            nextArrow={() => <div />}
-            autoplay
-            loop
-            className="rounded-2xl"
-        >
+        <Carousel navigation={() => <div />} autoplay className="rounded-2xl">
             {slides.map((slide) => (
                 <img
                     key={slide.id}

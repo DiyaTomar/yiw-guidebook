@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unstable-nested-components */
 import { Carousel } from '@material-tailwind/react';
 
 const slides = [
@@ -20,7 +21,14 @@ const slides = [
 
 function HomeCarousel() {
     return (
-        <Carousel autoplay loop className="rounded-2xl">
+        <Carousel
+            prevArrow={() => <div />}
+            nextArrow={() => <div />}
+            navigation={() => <div />}
+            autoplay
+            loop
+            className="rounded-2xl"
+        >
             {slides.map((slide) => (
                 <img
                     key={slide.id}

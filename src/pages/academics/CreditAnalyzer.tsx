@@ -26,7 +26,7 @@ function CreditAnalyzer() {
                     width="800"
                     height="900"
                     loading="lazy"
-                    src="http://ascs8.eservices.virginia.edu/AsEquivs/Home/EquivsShow?schoolId=1000170"
+                    src="http://ascs8.eservices.virginia.edu/AsEquivs/Home/EquivsForSubject?subject=HIST"
                 />
             </div>
 

@@ -20,7 +20,7 @@ export default function TestimonialHomeCard({ name, paragraph, major }: Props) {
                 <Typography variant="h5" color="blue-gray" className="mb-2">
                     {name}
                 </Typography>
-                <Typography variant="h7" color="blue-gray" className="mb-2">
+                <Typography variant="h6" color="blue-gray" className="mb-2">
                     {major}
                 </Typography>
                 <div>
