@@ -26,6 +26,9 @@ function ContactUsForm() {
         }
     };
 
+    const formSubmitKey: string | undefined = import.meta.env
+        .VITE_REACT_APP_FORM_SUBMIT_KEY;
+
     return (
         <motion.div
             className="mt-10 mx-auto w-2/5 md:mt-0"
@@ -46,7 +49,7 @@ function ContactUsForm() {
             <form
                 target="_blank"
                 onSubmit={onSubmit}
-                action="https://formsubmit.co/98257a774aa324775426a67cba990ae3"
+                action={`https://formsubmit.co/${formSubmitKey}`}
                 method="POST"
             >
                 {/* ...register (takes that input and places it underneath the name section so that we can access if there are any errors ) */}
