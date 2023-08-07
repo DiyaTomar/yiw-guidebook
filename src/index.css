@@ -25,4 +25,3 @@ body,
     font-family: 'Poppins', 'sans-serif'; /*sets font to DM Sans but if not available then it will fall onto the default sans-serif */
     @apply text-blue-700; /* @apply sets the default text color to gray-500, which is in our tailwind.config.js file */
 }
-    

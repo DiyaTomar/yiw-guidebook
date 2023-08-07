@@ -3,6 +3,7 @@ import Footer from '../../shared/Footer';
 import Header from '../../shared/Header';
 // eslint-disable-next-line import/no-named-as-default
 import FAQAccordian from './sharedResources/FAQAccordian';
+import AskQuestion from './sharedResources/AskQuestion';
 
 function FAQPage() {
     return (
@@ -12,6 +13,13 @@ function FAQPage() {
 
             <div className="w-1/2 mx-auto px-4 rounded-lg my-20 bg-blue-200">
                 <FAQAccordian />
+            </div>
+            <div className="mt-6">
+                <div className="text-black w-1/2 mx-auto mb-10 text-3xl leading-[3rem]">
+                    If you do not you see your question answered, then feel free
+                    to ask a question below!
+                </div>
+                <AskQuestion />
             </div>
             <Footer />
         </div>
