@@ -33,6 +33,7 @@ function Requirements() {
                 {info.map((advisor) => (
                     <ContactInfoCard
                         key={advisor.id}
+                        image={advisor.image}
                         name={advisor.name}
                         position={advisor.position}
                         number={advisor.number}

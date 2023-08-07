@@ -4,16 +4,24 @@ type Props = {
     number: string;
     email: string;
     office: string;
+    image: string;
 };
 
-function ContactInfoCard({ name, position, number, email, office }: Props) {
+function ContactInfoCard({
+    name,
+    position,
+    number,
+    email,
+    office,
+    image,
+}: Props) {
     return (
         <div className="bg-red-200 h-48 w-96 flex border-2 ">
             <div className="w-2/5 flex justify-center items-center">
                 <img
                     className="h-32 w-32 rounded-full border-2"
-                    src="https://i.imgflip.com/6yvpkj.jpg"
-                    alt="hello"
+                    src={image}
+                    alt="advisor img"
                 />
             </div>
             <div className="w-3/5 flex items-center">

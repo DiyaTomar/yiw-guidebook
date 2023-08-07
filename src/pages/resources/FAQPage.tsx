@@ -10,6 +10,10 @@ function FAQPage() {
         <div>
             <Navbar />
             <Header header="FAQ" />
+            <div className="text-center mt-16 text-4xl text-black">
+                {' '}
+                Answers from your Advisor
+            </div>
 
             <div className="w-1/2 mx-auto px-4 rounded-lg my-20 bg-blue-200">
                 <FAQAccordian />

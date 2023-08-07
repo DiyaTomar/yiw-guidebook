@@ -122,27 +122,80 @@ export const markerLocations = [
         description:
             'A pizza restaurant, good pizza and salads with live bluegrass music',
     },
+    {
+        id: 14,
+        city: 'Appalachia',
+        name: 'Black Bear BBQ',
+        position: { lat: 36.904049369607854, lng: -82.78404281061331 },
+        address: '516 W Main St, Appalachia, VA 24216',
+        description:
+            'A BBQ restaurant, offers smoked-BBQ items, grill options, and a daily country plate special.',
+    },
+    {
+        id: 15,
+        city: 'Kingsport',
+        name: 'Stir Fry Café',
+        position: { lat: 36.545805240031825, lng: -82.56135532028804 },
+        address: '125 Broad St, Kingsport, TN 37660',
+        description:
+            'A Pan-Asian restaurant in Tennessee, half price sushi on Wednesday and Saturday nights (tip: try their curries and french fries)',
+    },
+    {
+        id: 16,
+        city: 'Kingsport',
+        name: 'Fusion',
+        position: { lat: 36.550027796238396, lng: -82.6054413306918 },
+        address: '2320 Pendragon Rd, Kingsport, TN 37660',
+        description:
+            'A fusion restaurant, serves dishes combining Tex-Mex, Italian, & American cuisines',
+    },
+    {
+        id: 17,
+        city: 'Johnson City',
+        name: 'Cootie Brown’s',
+        position: { lat: 36.355775815313045, lng: -82.38333454728053 },
+        address: '2715 N Roan St, Johnson City, TN 37601',
+        description:
+            'A diner-inspired American restaurant, local chain with a large menu (tip: try the tamales)',
+    },
+    {
+        id: 18,
+        city: 'Abingdon',
+        name: 'The Girl & The Raven',
+        position: { lat: 36.713900126939436, lng: -81.96515396138359 },
+        address: '380 E Main St, Abingdon, VA 24210',
+        description:
+            'A breakfast and brunch restaurant with an aesthetic interior and a sleek bar, also serves coffees, juices, and cocktails',
+    },
 ];
 
 export const cities = [
     {
-        name: 'Wise',
-        position: { lat: 36.9759, lng: -82.5757 },
+        name: 'Abingdon',
+        position: { lat: 36.7098, lng: -81.9773 },
     },
     {
-        name: 'Norton',
-        position: { lat: 36.9334, lng: -82.629 },
+        name: 'Appalachia',
+        position: { lat: 36.9068, lng: -82.7818 },
     },
     {
         name: 'Big Stone Gap',
         position: { lat: 36.8586, lng: -82.7832 },
     },
     {
-        name: 'Abingdon',
-        position: { lat: 36.7098, lng: -81.9773 },
+        name: 'Johnson City',
+        position: { lat: 36.3134, lng: -82.3535 },
     },
     {
         name: 'Kingsport',
         position: { lat: 36.5484, lng: -82.5618 },
+    },
+    {
+        name: 'Norton',
+        position: { lat: 36.9334, lng: -82.629 },
+    },
+    {
+        name: 'Wise',
+        position: { lat: 36.9759, lng: -82.5757 },
     },
 ];

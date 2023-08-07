@@ -50,6 +50,7 @@ function OtherResources() {
                         <ContactInfoCard
                             key={advisor.id}
                             name={advisor.name}
+                            image={advisor.image}
                             position={advisor.position}
                             number={advisor.number}
                             email={advisor.email}

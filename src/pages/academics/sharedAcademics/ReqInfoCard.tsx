@@ -14,14 +14,11 @@ function ReqInfoCard({ id, sectionName, sectionList }: Props) {
             {sectionName}
             <ul className="mt-2 p-4 ml-8">
                 {sectionList.map((listItem) => (
-                    <li key={id} className={listStyling}>
+                    <li key={id + listItem.main} className={listStyling}>
                         {listItem.main}
                         <ul className="ml-24">
-                            {listItem.note?.map((noteItem, index) => (
-                                <li
-                                    key={`${index + Date.now()}`}
-                                    className={listStyling}
-                                >
+                            {listItem.note?.map((noteItem) => (
+                                <li key={noteItem} className={listStyling}>
                                     {noteItem}
                                 </li>
                             ))}

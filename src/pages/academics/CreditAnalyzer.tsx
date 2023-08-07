@@ -1,6 +1,7 @@
 import Navbar from '../../shared/Navbar';
 import Footer from '../../shared/Footer';
 import Header from '../../shared/Header';
+import CreditPDF from '../../assets/UVa Wise to UVa Traditional Curr..pdf';
 
 function CreditAnalyzer() {
     return (
@@ -11,22 +12,31 @@ function CreditAnalyzer() {
             <div className="pt-16 mx-auto w-1/2 text-black text-center">
                 UVA&apos;s Transfer Credit Analyzer allows student to see if
                 their courses transfer by providing the equivalent course code
-                at UVA.
+                at UVA. To access the website, click{' '}
+                <a
+                    className="hover:underline text-blue-700"
+                    href="http://ascs8.eservices.virginia.edu/asequivs"
+                    target="_blank_"
+                >
+                    here
+                </a>
                 <br />
-                <div className="pt-4">
-                    Select the course subject to refine your search results.
+                <div className="pt-12">
+                    To view what courses satisfy the traditional curriculum,
+                    check out this compiled PDF by your advisor Professor
+                    McKnight! Always make sure to check in with them to get the
+                    latest updates.
                 </div>
             </div>
 
             <div>
                 <iframe
-                    className="mx-auto py-24 relative"
-                    id="inlineFrameExample"
+                    className="mx-auto py-16 relative"
                     title="Inline Frame Example"
                     width="800"
                     height="900"
                     loading="lazy"
-                    src="http://ascs8.eservices.virginia.edu/AsEquivs/Home/EquivsForSubject?subject=HIST"
+                    src={CreditPDF}
                 />
             </div>
 

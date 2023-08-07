@@ -48,7 +48,7 @@ function CustomMap({ selectedLocation }: Props) {
     return (
         <div className="h-[35rem]">
             <GoogleMap
-                zoom={15}
+                zoom={13}
                 center={center}
                 mapContainerStyle={{ height: '100%' }}
             >
