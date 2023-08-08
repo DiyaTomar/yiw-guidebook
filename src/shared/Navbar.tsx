@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { kebabCase } from 'lodash';
-import Logo from '../assets/logo.png';
+import Logo from '../assets/WiseLogo.svg';
 // importing dropdown div component
 import Dropdown from './Dropdown';
 
@@ -25,11 +25,11 @@ function Navbar() {
     };
 
     // styling for different components
-    const linkStyles = 'hover:text-red-200 transition duration-300 p-4'; // navbar menu items when hovered
+    const linkStyles = 'hover:text-red-dark transition duration-300 p-4'; // navbar menu items when hovered
 
     return (
         // div containing entire navbar (using flex for row view)
-        <div className="flex h-24 bg-blue-900 text-white">
+        <div className="flex h-24 bg-gray-100 text-blue-dark border-t-red-dark border-t-[5px]">
             {/* YIW + Logo (allocating 1/3 space for div, centered vertically) */}
 
             {/* inserting uva wise logo inside div */}
@@ -37,8 +37,7 @@ function Navbar() {
                 className="ml-12 flex items-center gap-3 basis-1/3 text-3xl font-semibold"
                 to="/"
             >
-                <img className="w-10" src={Logo} alt="logo" />
-                Year in Wise
+                <img className="w-[16rem]" src={Logo} alt="logo" />
             </Link>
 
             {/* Menu options (centered vertically, positioned to right) */}
@@ -59,7 +58,7 @@ function Navbar() {
                                     // applying link hover styling & applying similar styling to heading if on one of the section's subpages
                                     className={`${linkStyles} ${
                                         isHeadingActive('Academics')
-                                            ? 'text-red-300'
+                                            ? 'text-red-dark'
                                             : ''
                                     } `}
                                     to="/academics/requirements"
@@ -94,7 +93,7 @@ function Navbar() {
                                     // applying link hover styling & applying similar styling to heading if on one of the section's subpages
                                     className={`${linkStyles} ${
                                         isHeadingActive('Activities')
-                                            ? 'text-red-300'
+                                            ? 'text-red-dark'
                                             : ''
                                     } `}
                                     to="/activities/organizations"
@@ -129,7 +128,7 @@ function Navbar() {
                                     // applying link hover styling & applying similar styling to heading if on one of the section's subpages
                                     className={`${linkStyles} ${
                                         isHeadingActive('College Life')
-                                            ? 'text-red-300'
+                                            ? 'text-red-dark'
                                             : ''
                                     } `}
                                     to="/college-life/places-to-visit"
@@ -163,7 +162,7 @@ function Navbar() {
                                     // applying link hover styling & applying similar styling to heading if on one of the section's subpages
                                     className={`${linkStyles} ${
                                         isHeadingActive('Resources')
-                                            ? 'text-red-300'
+                                            ? 'text-red-dark'
                                             : ''
                                     } `}
                                     to="/resources/faq"
@@ -191,7 +190,7 @@ function Navbar() {
 
                 {/* directs user to the Contact Us section on the FAQ page of Resources */}
                 <Link
-                    className="p-3 rounded-xl bg-gradient-to-r from-red-500 to-pink-400 text-white hover:bg-blue-600"
+                    className="p-3 rounded-md bg-blue-dark text-white hover:bg-blue-800"
                     to="/contact-us"
                 >
                     Contact Us

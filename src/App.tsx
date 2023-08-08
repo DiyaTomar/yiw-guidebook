@@ -10,8 +10,22 @@ function App() {
         <div>
             <Navbar />
             {/* contains title text and carousel */}
-            <div className="md:grid grid-cols-2 bg-blue-100 pb-36">
-                <div className="pt-64 w-2/3 mx-auto">
+
+            <div className="md:grid grid-cols-2 relative pb-24 bg-home-bg bg-cover bg-no-repeat h-[41rem] z-[-1]">
+                <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40" />
+                <div className="relative pt-52 w-2/3 ml-32 mx-auto text-white">
+                    <div className="text-7xl font-bold">
+                        Year in Wise Guidebook
+                    </div>
+                    <div className="mt-12 text-2xl font-light">
+                        This is the tagline for the Home screen
+                    </div>
+                </div>
+            </div>
+
+            {/* <div className="relative pb-24 bg-home-bg bg-cover bg-no-repeat z-10 h-[41rem]">
+                <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40" />
+                <div className="relative pt-52 ml-32 mx-auto text-white">
                     <div className="text-7xl font-bold">
                         Year in Wise Guidebook
                     </div>
@@ -19,39 +33,43 @@ function App() {
                         This is the tagline for the Home screen
                     </div>
                 </div>
-                <div className="my-36 h-3/4 mx-auto w-2/3">
+            </div> */}
+
+            {/* <div className="pb-24 bg-home-bg bg-cover bg-no-repeat z-10 brightness-50 h-[41rem]">
+                <div className=" pt-52 ml-32 mx-auto brightness-200 text-white">
+                    <div className="text-7xl font-bold">
+                        Year in Wise Guidebook
+                    </div>
+                    <div className="mt-12 text-2xl">
+                        This is the tagline for the Home screen
+                    </div>
+                </div>
+            </div> */}
+
+            {/* div containing about section */}
+            <div className="md:flex bg-gray-200 text-dark-blue">
+                <div className="basis-2/5 mx-24">
+                    <div className="pt-36 text-2xl font-medium">
+                        What is the Year in Wise program?
+                    </div>
+                    <div className="py-8 text-lg leading-[2] font-light">
+                        If you are a Virginian placed on the wait list for the
+                        College of Arts and Sciences at UVA, you can attend UVA
+                        Wise for one year—completing 30 hours of transferrable
+                        credit and maintaining a 3.0 GPA—and then transfer to
+                        UVA Grounds in Charlottesville to complete your degree.
+                        (No additional application to UVA’s College at Wise is
+                        required.) We hope you will consider this opportunity,
+                        and invite you to learn more about UVA Wise. As we like
+                        to say, This is Where it all Begins.
+                    </div>
+                </div>
+
+                <div className="my-28 p-8 mx-auto basis-3/5">
                     <HomeCarousel />
                 </div>
             </div>
-
-            {/* div containing about section */}
-            <div className="bg-blue-200">
-                <div className="pt-24 text-4xl text-center font-medium">
-                    What is the Year in Wise program?
-                </div>
-                <div className="text-center py-16 w-1/2 mx-auto text-xl leading-[2] font-light">
-                    Welcome to the University of Virginia’s College at Wise, a
-                    public, four-year residential liberal arts college located
-                    in the lush mountains of Southwest Virginia. UVA Wise is
-                    nationally-accredited and has been ranked among the top
-                    public liberal art colleges in the U.S. The only division of
-                    the University of Virginia located outside of
-                    Charlottesville, we were founded in 1954 to provide a
-                    high-quality education to the people of Southwest Virginia.
-                    Since that time, we have become recognized nationally as an
-                    excellent institution for academics, student engagement, and
-                    student outcomes. If you are a Virginian placed on the wait
-                    list for the College of Arts and Sciences at UVA, you can
-                    attend UVA Wise for one year—completing 30 hours of
-                    transferrable credit and maintaining a 3.0 GPA—and then
-                    transfer to UVA Grounds in Charlottesville to complete your
-                    degree. (No additional application to UVA’s College at Wise
-                    is required.) We hope you will consider this opportunity,
-                    and invite you to learn more about UVA Wise. As we like to
-                    say, This is Where it all Begins.
-                </div>
-            </div>
-            <div className="pt-24 text-4xl text-center">
+            <div className="mt-16 text-4xl text-center">
                 <div> Testimonials </div>
                 <div className="flex justify-evenly mt-4">
                     {testimonials.map((testimonial) => (

@@ -8,8 +8,8 @@ import {
 
 function Footer() {
     return (
-        <div className="md:flex h-56 bg-blue-900 text-white">
-            <div className="basis-1/3 bg-blue-900">
+        <div className="md:flex h-56 text-white bg-blue-dark">
+            <div className="basis-1/3">
                 <div className="px-32 py-12 flex flex-col">
                     <span className="text-5xl text-white mb-4">YIW</span>
                     <span className="text-2xl text-white">
@@ -17,7 +17,7 @@ function Footer() {
                     </span>
                 </div>
             </div>
-            <div className="basis-1/3 bg-blue-900">
+            <div className="basis-1/3">
                 <div className="px-32 py-12 gap-4 flex flex-col">
                     <span className="text 3xl text-white">Websites:</span>
                     <ul className="flex flex-col gap-2">
@@ -54,7 +54,7 @@ function Footer() {
                     </ul>
                 </div>
             </div>
-            <div className="basis-1/3 bg-blue-900">
+            <div className="basis-1/3">
                 <div className="px-32 py-12 gap-4 flex flex-col">
                     <span>Contact Us</span>
                     <span>UVA Wise Socials:</span>
