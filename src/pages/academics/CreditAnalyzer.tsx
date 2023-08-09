@@ -1,4 +1,4 @@
-import Navbar from '../../shared/Navbar';
+import Navbar from '../navbar/Navbar';
 import Footer from '../../shared/Footer';
 import Header from '../../shared/Header';
 import CreditPDF from '../../assets/UVa Wise to UVa Traditional Curr..pdf';

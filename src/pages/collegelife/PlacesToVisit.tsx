@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Navbar from '../../shared/Navbar';
+import Navbar from '../navbar/Navbar';
 import Footer from '../../shared/Footer';
 import Header from '../../shared/Header';
 import LocationDropdown from './sharedCL/LocationDropdown';

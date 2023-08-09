@@ -1,4 +1,4 @@
-import Navbar from '../../shared/Navbar';
+import Navbar from '../navbar/Navbar';
 import Footer from '../../shared/Footer';
 import Header from '../../shared/Header';
 // eslint-disable-next-line import/no-named-as-default

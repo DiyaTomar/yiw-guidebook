@@ -1,7 +1,7 @@
 import { BsFilter } from 'react-icons/bs';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import Navbar from '../../shared/Navbar';
+import Navbar from '../navbar/Navbar';
 import Footer from '../../shared/Footer';
 import Header from '../../shared/Header';
 import CLTestimonialCard from './sharedCL/CLTestimonialCard';

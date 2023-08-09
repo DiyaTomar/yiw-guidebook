@@ -1,4 +1,4 @@
-import Navbar from '../../shared/Navbar';
+import Navbar from '../navbar/Navbar';
 import Footer from '../../shared/Footer';
 import Header from '../../shared/Header';
 import { experience } from './sharedActivity/activityDesc';
