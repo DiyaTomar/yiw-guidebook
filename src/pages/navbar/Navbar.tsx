@@ -28,10 +28,12 @@ function Navbar() {
     // storing current location path
     const location = useLocation();
 
-    // const normalCarat =
-    //     'h-0 w-0 mt-3 ml-3 border-solid border-transparent border-[7px] border-t-white transform';
+    const carat =
+        'h-0 w-0 border-solid border-transparent border-[7px] border-t-white transition-all duration-200';
 
-    // const rotatedCarat = `${normalCarat} rotated-180`;
+    const normalCarat = `${carat} mt-3 ml-3`;
+
+    const rotatedCarat = `${carat} mt-1 ml-3 rotate-180`;
 
     // function that takes in heading
     const isHeadingActive = (heading: string) => {
@@ -232,7 +234,7 @@ function Navbar() {
 
             {/* Mobile Menu */}
             {!isAboveMediumScreens && isMenuToggled && (
-                <div className="absolute bottom-0 right-0 z-40 h-full w-[300px] bg-blue-dark drop-shadow-xl">
+                <div className="fixed bottom-0 right-0 z-40 h-screen w-[300px] bg-blue-dark drop-shadow-xl">
                     {/* Exact Pixels in tailwind must be surrounded by [] */}
                     <div className="flex justify-end p-6">
                         <button
@@ -263,15 +265,15 @@ function Navbar() {
                                 >
                                     Academics
                                 </button>
-                                {/* {!isOpenAcademics ? (
+                                {!isOpenAcademics ? (
                                     <div className={`${normalCarat}`} />
                                 ) : (
                                     <div className={`${rotatedCarat}`} />
-                                )} */}
+                                )}
                             </div>
 
                             {isOpenAcademics && (
-                                <div className="">
+                                <div>
                                     <Dropdown
                                         heading="Academics"
                                         subheadings={[
@@ -284,40 +286,107 @@ function Navbar() {
                             )}
                         </div>
                         <div>
-                            <Link
-                                className={`${
-                                    isHeadingActive('Activities')
-                                        ? 'text-red-dark'
-                                        : ''
-                                } `}
-                                to="/activities/organizations"
-                            >
-                                Activities
-                            </Link>
+                            <div className="flex">
+                                <button
+                                    type="button"
+                                    onClick={() =>
+                                        setIsOpenActivities(!isOpenActivities)
+                                    }
+                                    className={`${
+                                        isHeadingActive('Activities')
+                                            ? ' text-red-dark'
+                                            : ''
+                                    } `}
+                                >
+                                    Activities
+                                </button>
+                                {!isOpenActivities ? (
+                                    <div className={`${normalCarat}`} />
+                                ) : (
+                                    <div className={`${rotatedCarat}`} />
+                                )}
+                            </div>
+
+                            {isOpenActivities && (
+                                <div>
+                                    <Dropdown
+                                        heading="Activities"
+                                        subheadings={[
+                                            'Organizations',
+                                            'Events',
+                                            'Opportunities',
+                                        ]}
+                                        activePath={location.pathname} // passing the path to the webpage to Dropdown.tsx
+                                    />
+                                </div>
+                            )}
                         </div>
                         <div>
-                            <Link
-                                className={`${
-                                    isHeadingActive('College Life')
-                                        ? 'text-red-dark'
-                                        : ''
-                                } `}
-                                to="/college-life/places-to-visit"
-                            >
-                                College Life
-                            </Link>
+                            <div className="flex">
+                                <button
+                                    type="button"
+                                    onClick={() =>
+                                        setIsOpenCollegeLife(!isOpenCollegeLife)
+                                    }
+                                    className={`${
+                                        isHeadingActive('College Life')
+                                            ? ' text-red-dark'
+                                            : ''
+                                    } `}
+                                >
+                                    College Life
+                                </button>
+                                {!isOpenCollegeLife ? (
+                                    <div className={`${normalCarat}`} />
+                                ) : (
+                                    <div className={`${rotatedCarat}`} />
+                                )}
+                            </div>
+
+                            {isOpenCollegeLife && (
+                                <div>
+                                    <Dropdown
+                                        heading="College Life"
+                                        subheadings={[
+                                            'Places To Visit',
+                                            'Student Experiences',
+                                        ]}
+                                        activePath={location.pathname} // passing the path to the webpage to Dropdown.tsx
+                                    />
+                                </div>
+                            )}
                         </div>
                         <div>
-                            <Link
-                                className={`${
-                                    isHeadingActive('Resources')
-                                        ? 'text-red-dark'
-                                        : ''
-                                } `}
-                                to="/resources/faq"
-                            >
-                                Resources
-                            </Link>
+                            <div className="flex">
+                                <button
+                                    type="button"
+                                    onClick={() =>
+                                        setIsOpenResources(!isOpenResources)
+                                    }
+                                    className={`${
+                                        isHeadingActive('Resources')
+                                            ? ' text-red-dark'
+                                            : ''
+                                    } `}
+                                >
+                                    Resources
+                                </button>
+                                {!isOpenResources ? (
+                                    <div className={`${normalCarat}`} />
+                                ) : (
+                                    <div className={`${rotatedCarat}`} />
+                                )}
+                            </div>
+
+                            {isOpenResources && (
+                                <div>
+                                    <Dropdown
+                                        heading="Resources"
+                                        subheadings={['FAQ', 'Other Resources']}
+                                        activePath={location.pathname} // passing the path to the webpage to Dropdown.tsx
+                                    />
+                                </div>
+                            )}
                         </div>
                         <div>
                             <Link
