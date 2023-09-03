@@ -1,5 +1,5 @@
 // file containing code for the navbar
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { kebabCase } from 'lodash';
 import {
@@ -48,7 +48,7 @@ function Navbar() {
 
     return (
         // div containing entire navbar (using flex for row view)
-        <nav className="flex h-24 bg-gray-100 text-blue-dark border-t-red-dark border-t-[5px]">
+        <nav className="flex h-24 bg-gray-100 text-wise-blue border-t-red-dark border-t-[5px]">
             {/* YIW + Logo (allocating 1/3 space for div, centered vertically) */}
 
             {/* inserting uva wise logo inside div */}
@@ -210,7 +210,7 @@ function Navbar() {
 
                     {/* directs user to the Contact Us section on the FAQ page of Resources */}
                     <Link
-                        className="p-3 rounded-md bg-blue-dark text-white hover:bg-blue-800"
+                        className="p-3 rounded-md bg-wise-light-blue text-white hover:bg-blue-800 transition duration-"
                         to="/contact-us"
                     >
                         Contact Us
@@ -234,7 +234,7 @@ function Navbar() {
 
             {/* Mobile Menu */}
             {!isAboveMediumScreens && isMenuToggled && (
-                <div className="fixed bottom-0 right-0 z-40 h-screen w-[300px] bg-blue-dark drop-shadow-xl">
+                <div className="fixed bottom-0 right-0 z-40 h-screen w-[300px] bg-wise-light-blue drop-shadow-xl">
                     {/* Exact Pixels in tailwind must be surrounded by [] */}
                     <div className="flex justify-end p-6">
                         <button

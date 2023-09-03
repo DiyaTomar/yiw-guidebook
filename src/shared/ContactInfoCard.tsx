@@ -16,7 +16,7 @@ function ContactInfoCard({
     image,
 }: Props) {
     return (
-        <div className="bg-red-200 h-48 w-96 flex border-2 ">
+        <div className="bg-wise-light-blue h-48 w-96 flex border-2 ">
             <div className="w-2/5 flex justify-center items-center">
                 <img
                     className="h-32 w-32 rounded-full border-2"
@@ -24,9 +24,9 @@ function ContactInfoCard({
                     alt="advisor img"
                 />
             </div>
-            <div className="w-3/5 flex items-center">
+            <div className="w-3/5 flex items-center text-white">
                 <div className="ml-6 ">
-                    <div className="text-xl">{name}</div>
+                    <div className="text-xl font-medium">{name}</div>
                     <div className="pb-2 text-sm">{position}</div>
                     <ul className="text-xs">
                         <li>{number}</li>

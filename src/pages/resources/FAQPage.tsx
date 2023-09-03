@@ -15,11 +15,11 @@ function FAQPage() {
                 Answers from your Advisor
             </div>
 
-            <div className="w-1/2 mx-auto px-4 rounded-lg my-20 bg-blue-200">
+            <div className="w-1/2 mx-auto px-4 rounded-lg my-20 bg-wise-light-blue">
                 <FAQAccordian />
             </div>
             <div className="mt-6">
-                <div className="text-black w-1/2 mx-auto mb-10 text-3xl leading-[3rem]">
+                <div className="text-black text-center md:text-left w-1/2 mx-auto mb-10 text-3xl leading-[3rem]">
                     If you do not you see your question answered, then feel free
                     to ask a question below!
                 </div>

@@ -35,8 +35,8 @@ function Icon({ id, open }: Props) {
 
 export default function FAQAccordian() {
     const [open, setOpen] = useState(0);
-    const headerStyles = 'text-black text-2xl mb-4';
-    const bodyStyles = 'text-purple-800 text-xl font-bold';
+    const headerStyles = 'text-white text-2xl mb-4';
+    const bodyStyles = 'text-white text-md font-thin';
     const handleOpen = (value: SetStateAction<number>) => {
         setOpen(open === value ? 0 : value);
     };

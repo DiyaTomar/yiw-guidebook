@@ -17,7 +17,7 @@ function Requirements() {
                 requirements to satisfy in order to successfully transfer to
                 UVA.
             </div> */}
-            <div className="mt-24">
+            <div className="mt-12">
                 {allRequirements.map((requirement) => (
                     <ReqInfoCard
                         key={requirement.id}
@@ -29,7 +29,7 @@ function Requirements() {
             </div>
 
             <div className="text-center text-3xl pt-10">Program Advisors</div>
-            <div className="md:flex gap-16 pb-16 py-8 justify-center">
+            <div className="flex flex-wrap gap-16 pb-16 py-8 justify-center">
                 {info.map((advisor) => (
                     <ContactInfoCard
                         key={advisor.id}

@@ -11,7 +11,7 @@ function OtherResources() {
             <Header header="Other Resources" />
             <div className="w-5/6 mx-auto text-center">
                 <div className="text-3xl font-bold mt-16">Important Links</div>
-                <ul className="text-xl mt-4">
+                <ul className="text-xl mt-4 text-blue-700">
                     <li className="hover:underline">
                         <a
                             href="https://www.facebook.com/groups/380557069459316"
@@ -45,7 +45,7 @@ function OtherResources() {
                 <div className="text-3xl font-bold text-center mt-16">
                     Contact Info
                 </div>
-                <div className="md:flex gap-16 pb-16 py-8 justify-center">
+                <div className="flex flex-wrap gap-16 pb-16 py-8 justify-center">
                     {info.map((advisor) => (
                         <ContactInfoCard
                             key={advisor.id}

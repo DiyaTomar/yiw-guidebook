@@ -4,52 +4,49 @@ import Footer from './shared/Footer'; // importing Footer component
 import HomeCarousel from './shared/HomeCarousel';
 import TestimonialHomeCard from './shared/TestimonialHomeCard';
 import testimonials from './shared/homeTestimonialInfo';
+import useMediaQuery from './pages/navbar/hooks/useMediaQuery';
 
 function App() {
+    const isAboveMediumScreens: boolean = useMediaQuery('(min-width: 810px)'); // returns a bool val as per the custom hook we created that takes in a media query string
+    // in this case that string is the min-width of 1060 so it will return true if the viewport size is greater than 1060px
+    // media queries must have paranthesees around them
     return (
         <div>
             <Navbar />
             {/* contains title text and carousel */}
 
-            <div className="md:grid grid-cols-2 relative pb-24 bg-home-bg bg-cover bg-no-repeat h-[41rem] z-[-1]">
+            <div className="relative pb-24 bg-home-bg bg-cover bg-no-repeat h-[41rem] z-[-1] ">
                 <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40" />
-                <div className="relative pt-52 w-2/3 ml-32 mx-auto text-white">
-                    <div className="text-7xl font-bold">
-                        Year in Wise Guidebook
+                {isAboveMediumScreens && (
+                    <div className="relative pt-56 w-[40rem] ml-32 mx-auto text-white ">
+                        <div className="relative text-white bg-wise-light-blue p-4 rounded-2xl ">
+                            <div className="absolute top-1 left-1 bg-wise-blue h-full w-full z-[-2] rounded-2xl" />
+                            <div className="absolute top-2 left-2 bg-wise-red h-full w-full z-[-3] rounded-2xl" />
+                            <div className="absolute top-3 left-3 bg-white h-full w-full z-[-4] rounded-2xl" />
+                            <div className="text-8xl font-bold">
+                                Year in Wise
+                            </div>
+                            <div className="mt-12 text-2xl font-normal">
+                                This is Where it all Begins
+                            </div>
+                        </div>
                     </div>
-                    <div className="mt-12 text-2xl font-light">
-                        This is the tagline for the Home screen
-                    </div>
-                </div>
+                )}
             </div>
 
-            {/* <div className="relative pb-24 bg-home-bg bg-cover bg-no-repeat z-10 h-[41rem]">
-                <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40" />
-                <div className="relative pt-52 ml-32 mx-auto text-white">
-                    <div className="text-7xl font-bold">
-                        Year in Wise Guidebook
-                    </div>
-                    <div className="mt-12 text-2xl">
-                        This is the tagline for the Home screen
+            {!isAboveMediumScreens && (
+                <div className="h-40 bg-wise-blue text-white text-center text-4xl pt-4 border-wise-red border-4 border-y-transparent">
+                    Year in Wise
+                    <div className="mt-4 text-2xl">
+                        This is where it all begins
                     </div>
                 </div>
-            </div> */}
-
-            {/* <div className="pb-24 bg-home-bg bg-cover bg-no-repeat z-10 brightness-50 h-[41rem]">
-                <div className=" pt-52 ml-32 mx-auto brightness-200 text-white">
-                    <div className="text-7xl font-bold">
-                        Year in Wise Guidebook
-                    </div>
-                    <div className="mt-12 text-2xl">
-                        This is the tagline for the Home screen
-                    </div>
-                </div>
-            </div> */}
+            )}
 
             {/* div containing about section */}
-            <div className="md:flex bg-gray-200 text-dark-blue">
-                <div className="basis-2/5 mx-24">
-                    <div className="pt-36 text-2xl font-medium">
+            <div className="md:flex text-wise-blue">
+                <div className="basis-2/5 mx-24 text-center md:text-left">
+                    <div className="pt-24 text-2xl font-medium">
                         What is the Year in Wise program?
                     </div>
                     <div className="py-8 text-lg leading-[2] font-light">
@@ -60,18 +57,17 @@ function App() {
                         UVA Grounds in Charlottesville to complete your degree.
                         (No additional application to UVA’s College at Wise is
                         required.) We hope you will consider this opportunity,
-                        and invite you to learn more about UVA Wise. As we like
-                        to say, This is Where it all Begins.
+                        and invite you to learn more about UVA Wise.
                     </div>
                 </div>
 
-                <div className="my-28 p-8 mx-auto basis-3/5">
+                <div className="px-24 py-12 md:py-24 mb-14 mx-auto basis-3/5">
                     <HomeCarousel />
                 </div>
             </div>
-            <div className="mt-16 text-4xl text-center">
+            <div className="pt-16 text-4xl text-center bg-gray-50 text-wise-blue">
                 <div> Testimonials </div>
-                <div className="flex justify-evenly mt-4">
+                <div className="flex flex-wrap justify-evenly mt-4">
                     {testimonials.map((testimonial) => (
                         <TestimonialHomeCard
                             key={testimonial.id}
@@ -81,14 +77,14 @@ function App() {
                         />
                     ))}
                 </div>
-                <div className="text-xl my-12 text-black">
-                    Check out other testimonials on our
+                <div className="text-xl py-12 text-wise-blue">
+                    Check out other testimonials on our{' '}
                     <Link
                         to="/college-life/student-experiences"
                         className="text-blue-500 hover:underline"
                     >
                         student experiences
-                    </Link>
+                    </Link>{' '}
                     page!
                 </div>
             </div>

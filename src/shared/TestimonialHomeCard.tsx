@@ -15,11 +15,10 @@ type Props = {
 
 export default function TestimonialHomeCard({ name, paragraph, major }: Props) {
     return (
-        <Card className="mt-6 w-96">
+        <Card className="mt-6 w-80">
             <CardBody className="h-3/4 overflow-hidden text-left">
-                <Typography variant="h5" color="blue-gray" className="mb-2">
-                    {name}
-                </Typography>
+                {name}
+
                 <Typography variant="h6" color="blue-gray" className="mb-2">
                     {major}
                 </Typography>
@@ -29,7 +28,7 @@ export default function TestimonialHomeCard({ name, paragraph, major }: Props) {
             </CardBody>
             <CardFooter className="pt-0 h-1/4">
                 <Link to="/college-life/student-experiences">
-                    <Button>Read More</Button>
+                    <Button color="indigo">Read More</Button>
                 </Link>
             </CardFooter>
         </Card>

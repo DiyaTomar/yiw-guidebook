@@ -8,7 +8,7 @@ import {
 
 function Footer() {
     return (
-        <div className="md:flex h-56 text-white bg-blue-dark">
+        <div className="md:flex text-white bg-wise-blue text-center md:text-left">
             <div className="basis-1/3">
                 <div className="px-32 py-12 flex flex-col">
                     <span className="text-5xl text-white mb-4">YIW</span>
@@ -17,7 +17,7 @@ function Footer() {
                     </span>
                 </div>
             </div>
-            <div className="basis-1/3 bg-blue-dark">
+            <div className="basis-1/3 bg-wise-blue">
                 <div className="px-32 py-12 gap-4 flex flex-col">
                     <span className="text 3xl text-white">Websites:</span>
                     <ul className="flex flex-col gap-2">
@@ -54,11 +54,11 @@ function Footer() {
                     </ul>
                 </div>
             </div>
-            <div className="basis-1/3 bg-blue-dark">
+            <div className="basis-1/3 bg-wise-blue">
                 <div className="px-32 py-12 gap-4 flex flex-col">
                     <span>Contact Us</span>
                     <span>UVA Wise Socials:</span>
-                    <div className="flex gap-2">
+                    <div className="flex gap-2 justify-center md:justify-start">
                         <a href="https://www.instagram.com/uva_wise/">
                             <FiInstagram className="h-6 w-6" />
                         </a>
