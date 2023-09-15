@@ -11,6 +11,8 @@ app.use(
   })
 );
 
+app.use(express.json());
+
 const db = mysql.createConnection({
   host: "localhost",
   user: "root",
@@ -27,6 +29,21 @@ app.get("/contact", (req: Request, res: Response) => {
   db.query(sql, (err, data) => {
     if (err) return res.json(err);
     return res.json(data);
+  });
+});
+
+app.post("/add-message", (req: Request, res: Response) => {
+  // console.log(req.body);
+  const { name, email, message } = req.body;
+
+  const sql = "INSERT INTO contact (name, email, message) VALUES (?, ?, ?)";
+  db.query(sql, [name, email, message], (err, result) => {
+    if (err) {
+      console.error(err);
+      res.status(500).json({ message: "Error adding contact" });
+    } else {
+      res.status(201).json({ message: "Contact added successfully" });
+    }
   });
 });
 

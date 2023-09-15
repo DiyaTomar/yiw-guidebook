@@ -16,7 +16,7 @@ type Props = {
 export default function TestimonialHomeCard({ name, paragraph, major }: Props) {
     return (
         <Card className="mt-6 w-80">
-            <CardBody className="h-3/4 overflow-hidden text-left">
+            <CardBody className="h-3/4 overflow-hidden text-left text-2xl">
                 {name}
 
                 <Typography variant="h6" color="blue-gray" className="mb-2">

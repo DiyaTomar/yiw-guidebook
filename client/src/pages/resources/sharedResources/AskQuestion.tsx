@@ -2,7 +2,7 @@
 import { useForm } from 'react-hook-form';
 
 function AskQuestion() {
-    const inputStyles = `w-[800px] rounded-lg bg-gray-200 px-5 py-3 placeholder-black`;
+    const inputStyles = `w-[700px] rounded-lg bg-gray-200 px-5 py-3 placeholder-black`;
 
     /* Destructuring syntax so that we can reference the register, trigger, formState(errors) object as just register, trigger and errors rather then useForm.register making it simpiler [cleaner code] */
     /* register -> Registers form inputs, so the form can track the inputted values along with validation rules */

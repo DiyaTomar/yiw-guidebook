@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import { useForm } from 'react-hook-form';
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 
 function ContactUsForm() {
     const inputStyles = `mt-5 w-full rounded-lg bg-gray-200 px-5 py-3 placeholder-black`;
@@ -14,6 +15,10 @@ function ContactUsForm() {
         formState: { errors },
     } = useForm();
 
+    const [name, setName] = useState<string>('');
+    const [email, setEmail] = useState<string>('');
+    const [message, setMessage] = useState<string>('');
+
     /* aync because we want to await for async functions to complete before we start execution of our code again */
     /* e is the eventObject and has its own type but for time's sake, we just put any */
     /* Once the validation checks are complete (await trigger) then isValid stores a boolean val of that execution */
@@ -23,6 +28,31 @@ function ContactUsForm() {
         const isValid = await trigger();
         if (!isValid) {
             e.preventDefault();
+        } else {
+            try {
+                const contactResponse = await fetch(
+                    'http://localhost:3000/add-message',
+                    {
+                        method: 'POST',
+                        body: JSON.stringify({
+                            name,
+                            email,
+                            message,
+                        }),
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                    }
+                );
+
+                if (!contactResponse.ok) {
+                    // Handle HTTP error, e.g., 404 or 500
+                    throw new Error(`${contactResponse.status}`);
+                }
+            } catch (error) {
+                // Handle any fetch-related errors here
+                console.error('Fetch error:', error);
+            }
         }
     };
 
@@ -62,6 +92,9 @@ function ContactUsForm() {
                         required: true,
                         maxLength: 100,
                     })}
+                    onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+                        setName(e.target.value);
+                    }}
                 />
                 {/* if there are any errors for the name attribute that was just inputted then check to see the type and display the appropriate text */}
                 {errors.name && (
@@ -83,6 +116,9 @@ function ContactUsForm() {
                         required: true,
                         pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                     })}
+                    onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+                        setEmail(e.target.value);
+                    }}
                 />
                 {/* if there are any errors for the name attribute that was just inputted then check to see the type and display the appropriate text */}
                 {errors.email && (
@@ -106,6 +142,9 @@ function ContactUsForm() {
                         required: true,
                         maxLength: 2000,
                     })}
+                    onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => {
+                        setMessage(e.target.value);
+                    }}
                 />
                 {/* if there are any errors for the name attribute that was just inputted then check to see the type and display the appropriate text */}
                 {errors.message && (

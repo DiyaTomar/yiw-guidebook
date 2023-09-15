@@ -28,7 +28,9 @@ function Requirements() {
                 ))}
             </div>
 
-            <div className="text-center text-3xl pt-10">Program Advisors</div>
+            <div className="text-center text-3xl pt-16 font-semibold">
+                Program Advisors
+            </div>
             <div className="flex flex-wrap gap-16 pb-16 py-8 justify-center">
                 {info.map((advisor) => (
                     <ContactInfoCard

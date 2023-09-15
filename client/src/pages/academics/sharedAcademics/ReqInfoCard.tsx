@@ -10,9 +10,9 @@ const listStyling = 'list-disc text-xl py-2 leading-9';
 
 function ReqInfoCard({ id, sectionName, sectionList }: Props) {
     return (
-        <div className="mx-auto w-2/3 text-black py-4 text-4xl">
+        <div className="mx-auto w-2/3 text-black py-4 text-4xl font-semibold">
             {sectionName}
-            <ul className="mt-2 p-4 ml-8">
+            <ul className="mt-2 p-4 ml-8 font-normal">
                 {sectionList.map((listItem) => (
                     <li key={id + listItem.main} className={listStyling}>
                         {listItem.main}

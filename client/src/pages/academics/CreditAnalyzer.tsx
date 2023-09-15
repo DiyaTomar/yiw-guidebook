@@ -13,7 +13,7 @@ function CreditAnalyzer() {
             <Navbar />
             <Header header="Credit Analyzer" />
 
-            <div className="pt-16 mx-auto w-1/2 text-black text-center">
+            <div className="pt-16 mx-auto w-1/2 text-black text-center text-lg">
                 UVA&apos;s Transfer Credit Analyzer allows student to see if
                 their courses transfer by providing the equivalent course code
                 at UVA.{' '}
