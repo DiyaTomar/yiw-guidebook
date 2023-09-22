@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import Navbar from './pages/navbar/Navbar'; // importing Navbar component
 import Footer from './shared/Footer'; // importing Footer component
 import HomeCarousel from './shared/HomeCarousel';
@@ -45,7 +46,17 @@ function App() {
 
             {/* div containing about section */}
             <div className="md:flex text-wise-blue">
-                <div className="basis-2/5 mx-24 text-center md:text-left">
+                <motion.div
+                    className="basis-2/5 mx-24 text-center md:text-left"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.35 }}
+                    transition={{ duration: 0.5 }}
+                    variants={{
+                        hidden: { opacity: 0, x: -50 },
+                        visible: { opacity: 1, x: 0 },
+                    }}
+                >
                     <div className="pt-24 text-2xl font-medium">
                         What is the Year in Wise program?
                     </div>
@@ -59,7 +70,7 @@ function App() {
                         required.) We hope you will consider this opportunity,
                         and invite you to learn more about UVA Wise.
                     </div>
-                </div>
+                </motion.div>
 
                 <div className="px-24 py-12 md:py-24 mb-14 mx-auto basis-3/5">
                     <HomeCarousel />
@@ -81,7 +92,7 @@ function App() {
                     Check out other testimonials on our{' '}
                     <Link
                         to="/college-life/student-experiences"
-                        className="text-blue-500 hover:underline"
+                        className="text-blue-500 bg-left-bottom bg-gradient-to-r from-white to-blue-500 bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
                     >
                         student experiences
                     </Link>{' '}

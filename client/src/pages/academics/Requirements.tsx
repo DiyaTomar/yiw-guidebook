@@ -1,3 +1,4 @@
+import motion from 'framer-motion';
 import Navbar from '../navbar/Navbar';
 import Footer from '../../shared/Footer';
 import Header from '../../shared/Header';
@@ -19,6 +20,23 @@ function Requirements() {
             </div> */}
             <div className="mt-12">
                 {allRequirements.map((requirement) => (
+                    // <motion.div
+                    //     initial="hidden"
+                    //     whileInView="visible"
+                    //     viewport={{ once: true, amount: 0.5 }}
+                    //     transition={{ duration: 0.5 }}
+                    //     variants={{
+                    //         hidden: { opacity: 0, y: 50 },
+                    //         visible: { opacity: 1, y: 0 },
+                    //     }}
+                    // >
+                    //     <ReqInfoCard
+                    //         key={requirement.id}
+                    //         id={requirement.id}
+                    //         sectionName={requirement.sectionName}
+                    //         sectionList={requirement.sectionList}
+                    //     />
+                    // </motion.div>
                     <ReqInfoCard
                         key={requirement.id}
                         id={requirement.id}

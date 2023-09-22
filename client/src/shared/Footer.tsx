@@ -26,7 +26,7 @@ function Footer() {
                                 href="https://www.uvawise.edu/"
                                 target="_blank"
                                 rel="noreferrer"
-                                className="hover:underline pb-2"
+                                className="bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
                             >
                                 UVA Wise Website
                             </a>
@@ -36,7 +36,7 @@ function Footer() {
                                 href="https://my.uvawise.edu/"
                                 target="_blank"
                                 rel="noreferrer"
-                                className="hover:underline pb-2"
+                                className="bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
                             >
                                 UVA Wise Portal
                             </a>
@@ -46,7 +46,7 @@ function Footer() {
                                 href="https://moodle.uvawise.edu/"
                                 target="_blank"
                                 rel="noreferrer"
-                                className="hover:underline pb-2"
+                                className="bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
                             >
                                 Moodle
                             </a>

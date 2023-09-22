@@ -23,7 +23,7 @@ function WeatherDisplay({ selectedLocation }: Props) {
     }, [selectedLocation]);
     return (
         <div>
-            <ul className="flex">
+            <ul className="flex flex-wrap justify-center pb-16">
                 {weatherData &&
                     weatherData.list.map((day: any, index: number) => {
                         if (index % 8 === 0) {

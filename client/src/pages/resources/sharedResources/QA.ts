@@ -79,33 +79,28 @@ const questions = [
     },
     {
         id: 16,
-        question: 'Will I be taking classes in my major? ',
-        answer: ' No, you’re going to spend your year here with us mainly getting your core classes satisfied.  If there is room in your schedule, we will find you transferable classes in your intended discipline.',
-    },
-    {
-        id: 17,
         question: 'When can I declare my major? ',
         answer: 'When you get to UVA, unless you plan to stay here for your degree.',
     },
     {
-        id: 18,
+        id: 17,
         question: 'Should I take the Math placement exam? ',
         answer: ' Yes, as UVA only requires either one or two Math courses, we can usually get those out of the way during your year in Wise. ',
     },
     {
-        id: 19,
+        id: 18,
         question:
-            'Okay, so I took the Math placement test and it says I need to take Precalculus.  I had Calculus I, II, and III in high school.  Can I just go straight into a higher math?',
+            'I took the Math placement test and it says I need to take Precalculus.  I had Calculus I, II, and III in high school.  Can I just go straight into a higher math?',
         answer: 'Every year I have a student who insists on doing this and it never goes well.  So, my position is you need to take the class you test into.  In this case, I would suggest you wait until you get to UVA to take Math since you haven’t tested into a higher Math.',
     },
     {
-        id: 20,
+        id: 19,
         question:
             'Can I take ENG 1030 and either SPA 1030 or FRE 1030 instead of 1010? ',
         answer: ' Yes, the English and Foreign Language faculty encourage YiW students to take these accelerated courses.',
     },
     {
-        id: 21,
+        id: 20,
         question:
             'I’m worried that spending my freshman year at UVA-Wise might put me behind socially at a place like UVA.  Is this true?',
         answer: ' Not at all.  One member of our 2020-2021 cohort served as the Honor Court’s Counsel for the Defense and another student was President of the Multicultural Affairs Club…at a place like UVA, they would have to wait until they were juniors or seniors to hold such positions.  At UVA-Wise, you will be surrounded by opportunities like this.',
