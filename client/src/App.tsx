@@ -76,8 +76,8 @@ function App() {
                     <HomeCarousel />
                 </div>
             </div>
-            <div className="pt-16 text-4xl text-center bg-gray-50 text-wise-blue">
-                <div> Testimonials </div>
+            <div className="pt-16 text-4xl text-center bg-gray-200 text-wise-blue">
+                <div className="font-semibold"> Testimonials </div>
                 <div className="flex flex-wrap justify-evenly mt-4">
                     {testimonials.map((testimonial) => (
                         <TestimonialHomeCard

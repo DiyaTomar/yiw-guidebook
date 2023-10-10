@@ -11,7 +11,7 @@ function OtherResources() {
             <Header header="Other Resources" />
             <div className="w-5/6 mx-auto text-center">
                 <div className="text-3xl font-bold mt-16">Important Links</div>
-                <ul className="text-xl mt-4 text-blue-700">
+                <ul className="text-xl mt-4 text-wise-light-blue">
                     <li className="hover:underline">
                         <a
                             href="https://www.facebook.com/groups/380557069459316"
