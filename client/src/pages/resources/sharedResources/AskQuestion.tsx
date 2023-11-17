@@ -1,6 +1,5 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import { useForm } from 'react-hook-form';
-import { useEffect, useState } from 'react';
 
 function AskQuestion() {
     const inputStyles = `w-full mx-auto rounded-lg bg-gray-200 px-5 py-3 placeholder-black`;

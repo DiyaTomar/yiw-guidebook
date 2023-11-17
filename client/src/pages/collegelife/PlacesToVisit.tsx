@@ -18,16 +18,17 @@ function PlacesToVisit() {
         <div>
             <Navbar />
             <Header header="Places To Visit" />
-            <div className="mx-auto w-2/3 text-center pt-12 pb-10">
+            <div className="bg-blue-100 mt-10 px-10 border-2 border-blue-500 shadow-md shadow-black rounded-lg mx-auto w-1/2 text-center py-6">
                 {' '}
                 Select a location from the dropdown to see the location&apos;s
                 weather for the next 5 days. The map below will display places
                 recommended by staff and past Year in Wise students at the
-                chosen location.
+                chosen location. If you click on one of the red markers on the
+                map, a description of the location will appear below.
             </div>
             {isAboveMediumScreens ? (
                 <div className="w-3/4 mx-auto flex justify-between gap-[1rem] pt-8">
-                    <div className="pt-16 pb-20 flex justify-center">
+                    <div className="pt-16 pb-12 flex justify-center">
                         <LocationDropdown
                             setSelectedLocation={setSelectedLocation}
                         />

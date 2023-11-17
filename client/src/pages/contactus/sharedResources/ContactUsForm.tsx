@@ -98,7 +98,7 @@ function ContactUsForm() {
                 />
                 {/* if there are any errors for the name attribute that was just inputted then check to see the type and display the appropriate text */}
                 {errors.name && (
-                    <p className="mt-1 text-primary-500">
+                    <p className="mt-1 text-wise-red">
                         {errors.name.type === 'required' &&
                             'This field is required.'}
                         {errors.name.type === 'maxLength' &&
@@ -122,7 +122,7 @@ function ContactUsForm() {
                 />
                 {/* if there are any errors for the name attribute that was just inputted then check to see the type and display the appropriate text */}
                 {errors.email && (
-                    <p className="mt-1 text-primary-500">
+                    <p className="mt-1 text-wise-red">
                         {errors.email.type === 'required' &&
                             'This field is required.'}
                         {errors.email.type === 'pattern' &&
@@ -148,7 +148,7 @@ function ContactUsForm() {
                 />
                 {/* if there are any errors for the name attribute that was just inputted then check to see the type and display the appropriate text */}
                 {errors.message && (
-                    <p className="mt-1 text-primary-500">
+                    <p className="mt-1 text-wise-red">
                         {errors.message.type === 'required' &&
                             'This field is required.'}
                         {errors.message.type === 'maxLength' &&

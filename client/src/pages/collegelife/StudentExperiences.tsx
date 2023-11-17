@@ -12,6 +12,7 @@ import { TestimonialType, clTestimonials } from './sharedCL/CLTestimonialInfo';
 import { FilterOption } from './sharedCL/types';
 
 function StudentExperiences() {
+    window.scrollTo(0, 0);
     const [data, setData] = useState<TestimonialType>(null);
 
     function handleTestimonialClick(testimonialData: TestimonialType) {
@@ -22,7 +23,7 @@ function StudentExperiences() {
         setData(null);
     }
 
-    console.log(data);
+    // console.log(data);
 
     //  Array of FilterOption that holds objects with a label and value
     const filterOptions: FilterOption[] = [

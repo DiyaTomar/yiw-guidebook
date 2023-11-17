@@ -3,7 +3,7 @@ export const organization = [
         id: 1,
         title: 'Student Government Association',
         description:
-            'The Student Government Association (SGA) represents the student body in matters affecting student life and affairs of the College, promotes and supervises student organizations and activities, and promotes improvement of community conditions. All students enrolled for six or more semester hours are voting members of the SGA. The branches of the SGA include elected executive board officers, senators representing each class, at-large senators, and an international senator.  The SGA president has the power to appoint members of the student body to their cabinet.',
+            'The Student Government Association (SGA) is an organization comprised of students who are elected to represent the interests and concerns of their fellow students. The SGA serves as a liaison between the student body and the administration, advocating for policies and initiatives that enhance the academic and social experience of students. Through various committees and events, the SGA strives to foster a sense of community and engagement among students, while promoting leadership and civic responsibility.',
     },
     {
         id: 2,
@@ -16,6 +16,18 @@ export const organization = [
         title: 'Circle K International',
         description:
             'Circle K International exists to provide students and other college members with the chance for volunteerism as well as to build a stronger bond with the community. Circle K is committed to building leadership, friendship, and citizenship in our society through community service. Circle K International is a branch of the Kiwanis Club of Wise.',
+    },
+    {
+        id: 4,
+        title: 'Cyber Security & Robotics Club',
+        description:
+            'The UVA-Wise Robotics and Cyber Security Club opens the door to a thrilling realm of potential and professional prospects. The club focuses on equipping individuals with practical know-how, vital expertise, and industry-acclaimed certifications in dynamic domains such as Software Engineering, DevOps, Cloud Engineering, Cyber Security, IT, and beyond.',
+    },
+    {
+        id: 5,
+        title: 'Kinesiology Club',
+        description:
+            'The purpose of the UVA Wise Kinesiology Club is to provide leadership and service for students interested in kinesiology related fields. More specifically, the objectives of the UVA Wise Kinesiology Club are as follows: To provide academic, social, and professional support to students interested in kinesiology-realted fields. To provide a network for curent undergraduates, connecting them to alumni and post graduation opportunities in the field of kinesiology. To share develpoments in kinesiology-realted careers. To encourage and promote healthy living on campus and in the community through volunteering and civic-engagement opportunities.',
     },
 ];
 
@@ -33,7 +45,7 @@ export const opportunity = [
         id: 1,
         title: 'The Nest',
         description:
-            'The Nest is an off-campus facility for entrepreneurial-minded students to pursue and bounce startup business venture ideas off one another, as well as faculty and area businessmen and businesswomen.',
+            'The Nest is an off-campus facility for entrepreneurial-minded students to pursue and bounce startup business venture ideas off one another, as well as faculty and area businessmen and businesswomen. The Nest offers opportunities including pitch competitions, leadership opportunities, resume building, skills courses, trips, impact projects, etc.',
     },
     {
         id: 2,

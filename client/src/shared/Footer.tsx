@@ -43,12 +43,12 @@ function Footer() {
                         </li>
                         <li>
                             <a
-                                href="https://moodle.uvawise.edu/"
+                                href="https://canvas.virginia.edu/"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
                             >
-                                Moodle
+                                Canvas
                             </a>
                         </li>
                     </ul>

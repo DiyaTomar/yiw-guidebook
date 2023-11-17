@@ -48,7 +48,7 @@ function Navbar() {
 
     return (
         // div containing entire navbar (using flex for row view)
-        <nav className="flex h-24 bg-gray-100 text-wise-blue border-t-red-dark border-t-[5px]">
+        <nav className="flex h-24 bg-gray-100 text-wise-blue border-t-red-dark border-t-[5px] z-10">
             {/* YIW + Logo (allocating 1/3 space for div, centered vertically) */}
 
             {/* inserting uva wise logo inside div */}

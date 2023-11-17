@@ -1,19 +1,13 @@
-import { useState, useEffect } from 'react';
 import Navbar from '../navbar/Navbar';
 import Footer from '../../shared/Footer';
 import Header from '../../shared/Header';
 // eslint-disable-next-line import/no-named-as-default
 import FAQAccordian from './sharedResources/FAQAccordian';
 import AskQuestion from './sharedResources/AskQuestion';
-import useMediaQuery from '../navbar/hooks/useMediaQuery';
 
 function FAQPage() {
-    const isAboveMediumScreens: boolean = useMediaQuery('(min-width: 810px)'); // returns a bool val as per the custom hook we created that takes in a media query string
-    // in this case that string is the min-width of 1060 so it will return true if the viewport size is greater than 1060px
-    // media queries must have paranthesees around them
-
     return (
-        <div>
+        <div className="topLayer">
             <Navbar />
             <Header header="FAQ" />
             <div className="text-center mt-16 text-4xl text-black font-semibold">

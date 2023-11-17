@@ -1,4 +1,3 @@
-import motion from 'framer-motion';
 import Navbar from '../navbar/Navbar';
 import Footer from '../../shared/Footer';
 import Header from '../../shared/Header';
