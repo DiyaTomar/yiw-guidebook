@@ -51,7 +51,7 @@ function ContactUsForm() {
                 }
             } catch (error) {
                 // Handle any fetch-related errors here
-                console.error('Fetch error:', error);
+                // console.error('Fetch error:', error);
             }
         }
     };
