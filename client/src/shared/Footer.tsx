@@ -13,7 +13,7 @@ function Footer() {
                 <div className="px-32 py-12 flex flex-col">
                     <span className="text-5xl text-white mb-4">YIW</span>
                     <span className="text-2xl text-white">
-                        Developed by ...
+                        Developed by Devhub
                     </span>
                 </div>
             </div>
