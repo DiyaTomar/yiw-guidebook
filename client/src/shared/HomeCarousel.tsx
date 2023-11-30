@@ -1,6 +1,8 @@
 /* eslint-disable react/no-unstable-nested-components */
 import { Carousel } from '@material-tailwind/react';
 import HomeImage from '../assets/ClinchTubing1.jpeg';
+import HomeImage2 from '../assets/HomeImage2.jpeg';
+import HomeImage3 from '../assets/HomeImage3.jpg';
 
 const slides = [
     {
@@ -10,12 +12,12 @@ const slides = [
     },
     {
         id: 2,
-        src: 'https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80',
+        src: HomeImage2,
         alt: '2',
     },
     {
         id: 3,
-        src: 'https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80',
+        src: HomeImage3,
         alt: '3',
     },
 ];
